@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: url('6345959.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Glass Card */
+.card {
+    position: relative;
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    font-size: 14px;
+}
+
+/* Labels */
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 12px;
+    transition: 0.3s;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Floating label */
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    font-size: 10px;
+    color: #00e6ff;
+}
+
+/* Select */
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #000;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Hover */
+button:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+/* Disabled */
+button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+/* SEARCH SECTION */
+.search-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.search-section h3 {
+    margin-bottom: 10px;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+/* Search Input */
+.search-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255,255,255,0.8);
+    color: #000;
+}
+
+/* Yellow Search Button */
+.search-form button {
+    padding: 10px 15px;
+    background: #ffdd57;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hover */
+.search-form button:hover:not(:disabled) {
+    background: #e6c54f;
+    transform: scale(1.05);
+}
+
+/* Divider */
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 20px 0;
+}
+
+/* Ticket */
+.ticket {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 5px solid #ffdd57;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.ticket h2 {
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 1px dashed rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.ticket-details p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.ticket-details span {
+    font-weight: bold;
+    color: #ffdd57;
+    display: inline-block;
+    width: 120px;
+}
+
+/* Ticket Buttons */
+.ticket-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Home Button */
+.home-btn {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+/* Print Button */
+.print-btn {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* PDF Button */
+.pdf-btn {
+    background: #6f42c1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Success */
+.success {
+    margin-top: 20px;
+    background: rgba(0,255,150,0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Highlight */
+.highlight {
+    color: #ffdd57;
+    font-weight: bold;
+}
+
+/* Error */
+.error-msg {
+    background: rgba(255, 77, 77, 0.2);
+    color: #ff4d4d;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Expired */
+.expired {
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Spinner */
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.spinner.dark {
+    border: 3px solid rgba(0,0,0,0.2);
+    border-top-color: #000;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* QR Code */
+#qrcode, #qrcode2 {
+    margin: 15px auto;
+    width: 100px;
+}
+
